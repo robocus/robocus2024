@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom class */
+.top-menu-item{
+    @apply cursor-pointer py-1 hover:font-bold relative  after:lg:absolute after:lg:bottom-0  after:lg:left-0.5  after:lg:bg-orange-600 after:lg:h-0.5 after:lg:lg:w-0 hover:after:lg:w-full transition-all after:lg:ease-in-out after:lg:duration-300;
+}
+
+
+.menu-item{
+    @apply cursor-pointer py-1 hover:font-bold relative  after:lg:absolute after:lg:bottom-0  after:lg:left-0.5  after:lg:bg-orange-600 after:lg:h-0.5 after:lg:lg:w-0 hover:after:lg:w-full transition-all after:lg:ease-in-out after:lg:duration-300;
+}
+.top-menu-item-active{
+    @apply font-semibold lg:text-orange-600; 
+}
+
+.top-menu-expanded{
+    @apply  py-6 left-0 md:justify-between absolute top-7  w-full h-screen bg-blue-600 text-center mt-2 animate-slideDown;
+}
+

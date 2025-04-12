@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robocus 2024</title>
+    <link rel="icon" href="./images/favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/output.css" />
+    <script src="./js/main.js" type="text/javascript" async></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bao gồm thư viện Slick Carousel -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <!-- dots slider -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Tùy chỉnh các thuộc tính CSS nếu cần */
+      .dots {
+        width: 4px; /* Độ rộng của thanh ngang */
+        height: 4px; /* Độ cao của thanh ngang */
+        background-color: chocolate; /* Màu sắc của thanh ngang */
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div
+        class="content-wrapper font-Montserrat bg-white max-w-screen-3xl text-lg mx-auto"
+      >
+      <header
+      id="header"
+      class="top-0 z-50 sticky py-2 lg:py-3 xl:py-4 w-full h-full bg-ct-blue"
+    >
+      <nav class="flex flex-row justify-between items-center relative">
+        <!-- Reponsive Navbar -->
+        <button id="id-top-menu-toggle" class="lg:hidden air:basis-3/6 basis-1/6 lg:basis-1/6 flex items-center text-white px-4 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+          </svg>
+        </button>
+        
+        <!-- End responsive Navbar -->
+        <!-- LOGO -->
+        <div
+          class="logo air:basis-4/6 air:ml-96 ml-16  lg:ml-4 sm:items-center justify-center pl-0.5 lg:pl-3 xl:pl-10 basis-4/6 lg:basis-2/6 xl:basis-1/6 cursor-pointer"
+        >
+        <a href="./index.html#">
+          <img
+            src="./images/logo/logo.png"2
+            alt=""
+            class="px-4 w-auto h-auto sm:items-center"
+          />
+        </a>
+        </div>
+        <ul
+          id="id-top-menu"
+          class="lg:basis-4/6 mt-2 hidden lg:flex lg:items-center lg:justify-center lg:gap-5 xl:gap-10 uppercase lg:text-xs xl:text-lg text-white font-medium"
+        >
+          <li class="top-menu-item">
+            <a href="#" class="">Trang chủ</a>
+          </li>
+          <li class="top-menu-item">
+            <a href="#topic" class="">Thể lệ</a>
+          </li>
+          <li id="id-timeline" class="top-menu-item">
+            <a href="#timeline" class="">Timeline</a>
+          </li>
+          <li id="id-sponsers"  class="top-menu-item" >
+            <a href="#sponsers" class="">Nhà Tài trợ </a>
+          </li>
+          <li class="top-menu-item">
+            <a href="./news-page/news.html" class="">Tin tức</a>
+          </li>
+          <li   class="top-menu-item">
+            <a href="#robocus2023" class="">Robocus 2023</a>
+          </li>
+          <!-- <li class="top-menu-item">
+            <a href="#contact" class="">Liên hệ</a>
+          </li> -->
+
+        </ul>
+        <ul
+          class="air:basis-3/6 basis-3/6 lg:basis-1/6 flex justify-end items-center mr-14 air:ml-40 lg:ml-5 text-white text-xs air:text-base xl:text-lg lg:text-sm font-semibold"
+        >
+          <li class="cursor-pointer hover:text-orange-700 uppercase">
+            <a
+              href="./register.html"
+              alt="register"
+              class="h-auto air:px-2 air:py-1.5  hover:orangered text-white hover:bg-ct-orange rounded shadow hover:shadow-lg py-0.5 lg:px-3 lg:py-1.5 border border-white hover:border-transparent"
+            >
+              <span>Đăng ký</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+        <main class="">
+          <section id="#">
+          <div class="">
+
+<div class=" xl:w-screen xl:h-screen xl:flex xl: justify-center items-center">
+	<div id="default-carousel" class="relative xl:w-full xl:h-full" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="overflow-hidden  relative h-56 sm:h-64 lg:h-screen xl:h-screen">
+            <!-- Item 1 -->
+            <div class="flex justify-center items-center hidden duration-700 ease-in-out " data-carousel-item>
+              
+                <img src="./images/slider-image/20240424-web-banner-chinh-thuc-khoi-dong.jpg" class="absolute top-0 left-0 w-full h-full object-cover" alt="">
+                <a href="./news-page/news-01-page.html" class=" text-center flex justify-center items-center air:hidden absolute w-26 h-5 text-xs xl:w-52 xl:h-12 bottom-5 left-1/2 transform -translate-x-1/2 mb-4 py-2.5 px-5 xl:text-lg font-medium focus:outline-none bg-ct-orange rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 text-white  dark:hover:text-white xl:mb-32">Xem thêm</a>
+
+
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="images/slider-image/test-02.jpg" class="absolute top-0 left-0 w-full h-full object-cover" alt="">
+                <a href="./pages/challenges/A-model.html" class=" text-center flex justify-center items-center air:hidden absolute w-26 h-5 text-xs xl:w-52 xl:h-12 bottom-5 left-1/2 transform -translate-x-1/2 py-2.5  px-5 xl:text-lg font-medium focus:outline-none bg-ct-orange rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 text-white  dark:hover:text-white mb-4 v xl:mb-32">Xem thêm</a>
+            </div>
+
+        </div>
+        <!-- Slider indicators -->
+        <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                <span class="hidden">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span class="hidden">Next</span>
+            </span>
+        </button>
+    </div>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+</div>
+          
+  
+          </div>
+        </section>
+
+
+
+
+          <section id="topic">
+            <div class="topic">
+                <div class="">
+                    <div class="bg-white flex justify-center items-center">
+                        <div class="min-h-screen w-screen">
+                            <div class="flex flex-col px-4">
+                              <section>
+                                <div class="organization mb-0">
+                                  <p class="mt-28 uppercase text-center text-3xl font-bold mb-0 text-ct-blue"> Đơn vị tổ chức</p>
+                                  <hr class="m-auto border-ct-orange border-t-2 w-48 mt-2">
+                                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 ">    
+                                    <div class="flex justify-center lg:justify-end mt-10 lg:mr-5">
+                                      <img src="./images/organizational units/logo-hcmus.png" alt="" class="lg:w-48 h-48">
+                                     </div>
+                                     <div class="flex justify-center lg:justify-start lg:ml-5">
+                                      <img src="./images/organizational units/robotics-iot-club-hcmus-logo-01.png" alt="" class="py-0 w-72 lg:w-72 h-auto">
+                                     </div>
+                                  </div>
+                                </div>
+                              </section>
+                                <p class="text-2xl text-center -mt-6 text-ct-blue lg:text-3xl md:text-3xl leading-normal md:leading-relaxed font-bold">THỂ LỆ</p>
+                                <hr class="m-auto border-ct-orange border-t-2 w-32 mt-0 mb-10">
+        
+                                <div class="grid grid-cols-1 lg:grid-cols-3 justify-center items-center text-center gap-10 text-white">
+                                    <a href="./pages/challenges/A-model.html" class="border border-blue-500 bg-ct-blue p-4 relative block hover:scale-105 transition-transform">
+                                        <h2 class="text-xl font-semibold mb-5">BẢNG A - WEDO 2.0</h2>
+                                        <img src="./images/galery-images/news-01.jpg" alt="" class="rounded mb-3">
+                                        <p>Thể lệ bảng thi đấu BẢNG A</p>
+
+                                    </a>
+                                    
+                                    <a href="./pages/challenges/B-model.html" class="border border-blue-500 bg-ct-blue p-4 relative block hover:scale-105 transition-transform">
+                                        <h2 class="text-xl font-semibold mb-5">BẢNG B - SPIKE & MINDSTORMS</h2>
+                                        <img src="./images/galery-images/news-03 copy.jpg" alt="" class="rounded mb-3">
+                                        <p>Thể lệ bảng thi đấu BẢNG B</p>
+   
+                                    </a>
+                                    
+                                    <a href="./pages/challenges/C-model.html" class="border border-blue-500 bg-ct-blue p-4 relative block hover:scale-105 transition-transform">
+                                        <h2 class="text-xl font-semibold mb-5">BẢNG C - ARDUINO</h2>
+                                        <img src="./images/galery-images/news-02 copy.jpg" alt="" class="rounded mb-3">
+                                        <p>Thể lệ bảng thi đấu BẢNG C</p>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+          <!--end topic-->
+          <section id="timeline">
+            <!-- Timeline -->
+            <div class="lg:ml-28 timeline">
+             
+                <div class="bg-white text-ct-blue py-8">
+                  <div
+                    class="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24"
+                  >
+                    <div
+                      class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8"
+                    >
+                      <p class="m-0 text-orange-500 uppercase tracking-loose">
+                        KẾ HOẠCH TỔ CHỨC
+                      </p>
+                      
+                      <p
+                        class="text-2xl lg:text-3xl md:text-4xl leading-normal md:leading-relaxed mb-4 font-bold"
+                      >
+                        TIMELINE CUỘC THI
+                      </p>
+                      <hr class="border-ct-orange border-t-2 w-40 mb-5 ">
+                      <p class="text-sm md:text-lg text-black mb-4">
+                        Thông tin về các mốc thời gian chính diễn ra cuộc thi
+                        Giải pháp Sáng tạo Robot ROBOCUS 2024
+                      </p>
+                    </div>
+                    <div class="ml-0 md:ml-12 lg:w-2/3 sticky">
+                      <div class="container mx-auto w-full h-full">
+                        <div class="relative wrap overflow-hidden p-10 h-full">
+
+                          <div
+                            class=" mt-2 border-yellow-555 absolute h-full border"
+                            style="
+                              left: 50%;
+                              border: 2px solid orangered;
+                              border-radius: 1%;
+                            "
+                          ></div>
+                          <svg class="absolute left-1/2 top-20 lg:top-28 transform -translate-x-1/2" height="20" width="20">
+                            <circle cx="12" cy="10" r="7" stroke="#F2380F" stroke-width="3" fill="white" />
+                          </svg>
+
+                          <svg class="absolute left-1/2 top-96 lg:top-72 transform -translate-x-1/2" height="20" width="20">
+                            <circle cx="12" cy="10" r="7" stroke="#F2380F" stroke-width="3" fill="white" />
+                          </svg>
+
+                          <svg class="absolute left-1/2 bottom-96 lg:bottom-80 transform -translate-x-1/2" height="20" width="20">
+                            <circle cx="12" cy="10" r="7" stroke="#F2380F" stroke-width="3" fill="white" />
+                          </svg>
+                          <svg class="absolute left-1/2 bottom-28 lg:bottom-32 transform -translate-x-1/2" height="20" width="20">
+                            <circle cx="12" cy="10" r="7" stroke="#F2380F" stroke-width="3" fill="white" />
+                          </svg>
+                          <div
+                            class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+                          >
+                            <div class="order-1 w-5/12"></div>
+                            <div class="order-1 w-5/12 px-1 py-4 text-right">
+                              <p class="mb-3 text-ms lg:text-lg text-ct-orange">
+                                Ngày 01 Tháng 06, 2024
+                              </p>
+                              <h4 class="mb-3 font-bold text-lg md:text-2xl">
+                                Khởi động cuộc thi
+                              </h4>
+                              <p
+                                class="text-sm md:text-lg leading-snug text-black text-opacity-100"
+                              >
+                                Phát động cuộc thi Giải pháp Sáng tạo Robot
+                                ROBOCUS 2024
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="mb-8 flex justify-between items-center w-full right-timeline"
+                          >
+                            <div class="order-1 w-5/12"></div>
+                            <div class="order-1 w-5/12 px-1 py-4 text-left">
+                              <p class="mb-3 text-ms lg:text-lg text-ct-orange">
+                                Ngày 02 Tháng 06, 2024
+                              </p>
+                              <h4 class="mb-3 font-bold text-lg md:text-2xl">
+                                Tiếp nhận đăng kí
+                              </h4>
+                              <p
+                                class="text-sm md:text-lg leading-snug text-black text-opacity-100"
+                              >
+                                Tiếp nhận đăng đơn đăng kí của các thí sinh tham gia.
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+                          >
+                            <div class="order-1 w-5/12"></div>
+                            <div class="order-1 w-5/12 px-1 py-4 text-right">
+                              <p class="mb-3 text-ms lg:text-lg text-ct-orange">
+                                Ngày 15 Tháng 06, 2024
+                              </p>
+                              <h4 class="mb-3 font-bold text-lg md:text-2xl">
+                                Huấn luyện thi đấu
+                              </h4>
+                              <p
+                                class="text-sm md:text-lg leading-snug text-black text-opacity-100"
+                              >
+                                Tiến hành huấn luyện ở các bảng thi đấu
+                              </p>
+                            </div>
+                          </div>
+
+                          <div
+                            class="flex justify-between items-center w-full right-timeline"
+                          >
+                            <div class="order-1 w-5/12"></div>
+
+                            <div class="order-1 w-5/12 px-1 py-5">
+                              <p class="mb-3 text-ms lg:text-lg text-ct-orange">
+                                Ngày 04 Tháng 08, 2024
+                              </p>
+                              <h4
+                                class="mb-3 font-bold text-lg md:text-2xl text-left"
+                              >
+                                Tổ chức cuộc thi
+                              </h4>
+                              <p
+                                class="text-sm md:text-lg leading-snug text-black text-opacity-100"
+                              >
+                                Cuộc thi chính thức diễn ra
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             
+            </div>
+          </section>
+          <!--end timeline-->
+
+
+          <section id="sponsers">
+          <div class="container mx-auto flex flex-col items-center sponsers">
+            <p class="text-center uppercase font-bold text-3xl text-ct-blue mt-32">NHÀ TÀI TRỢ</p>
+            <hr class= "m-auto border-ct-orange border-t-2 w-40">
+            <div class="grid grid-cols-1 xl:grid-cols-1 text-center">
+              <div class="">
+                <p class="mt-10 font-bold text-2xl text-ct-orange">NHÀ TÀI TRỢ CHÍNH</p>
+                <div class="flex flex-wrap justify-center -mt-4">
+                  <img src="images/sponser-image /ITEC-logo-1080x1080-05.png" alt="" class="w-72 h-auto">
+
+                </div>
+              </div>
+              <div class="">
+                <p class=" mt-3 font-bold text-2xl text-ct-orange">NHÀ ĐỒNG TÀI TRỢ</p>
+                <div class="flex flex-wrap justify-center -mt-4">
+                  <img src="images/sponser-image /ITEC-logo-1080x1080-05.png" alt="" class="w-56 h-auto">
+                  <img src="images/sponser-image /ITEC-logo-1080x1080-05.png" alt="" class="w-56 h-auto">
+                </div>
+              </div>
+              <div class="">
+                <p class="mt-4 font-bold text-2xl text-ct-orange">NHÀ TÀI TRỢ KHÁC</p>
+                <div class="flex flex-wrap justify-center -mt-4">
+                  <img src="images/sponser-image /ITEC-logo-1080x1080-05.png" alt="" class="w-48 h-auto">
+                  <img src="images/sponser-image /ITEC-logo-1080x1080-05.png" alt="" class="w-48 h-auto">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+          <section id="robocus2023">
+            <!-- <div class="robocus-jorney py-8 mt-20">
+              <div class="grid grid-cols-1 lg:grid-cols-2"> -->
+
+                  <!-- Col 1 - Description -->
+   
+                  <!-- <div class="basis-2/6">
+                    <p class ="uppercase text-center lg:ml-28 lg:text-left text-ct-blue text-3xl lg:text-3xl font-bold mb-2 lg:mb-4 mt-20">HÀNH TRÌNH ROBOCUS 2023</p>
+                    <hr class= "m-auto lg:text-left lg:ml-28 border-ct-orange border-t-2 w-40 mb-2 lg:mb-5">
+                    <p class="text-center text-base lg:text-lg lg:text-left lg:ml-28">Cùng nhau nhìn lại hành trình Robocus 2023</p>
+
+                  </div>
+                  <div class=" px-2 w-auto basis-5/6 ml-0 mx-auto lg:mr-32">
+                    <video controls> <source src="./videos/Robocus2023-tongket.mp4"> </video>
+                  </div>
+     
+              </div>
+            </div> -->
+            <div class="mt-32">
+            <p class ="text-center uppercase text-ct-blue text-3xl font-bold mt-20 -mb-0">hình ảnh cuộc thi ROBOCUS 2023</p>
+            <hr class= "m-auto border-ct-orange border-t-2 w-40 mt-2 mb-10">
+            <div class="galery mb-2">
+              <div>
+                <div class="slider-container-galery block w-full">
+                  <img src="./images/galery-images/news-01.jpg" alt="">
+                  <img src="./images/galery-images/news-02 copy.jpg" alt="">
+                  <img src="./images/galery-images/robocus-img-2023-03b.jpg" alt="">
+                  
+                  <img src="./images/galery-images/robocus-img-2023-sumo-98.jpg" alt="">
+                  <img src="./images/galery-images/robocus-img-2023-sumo-99o.jpg" alt="">
+                  
+
+              </div>
+            </div>
+          </div>
+          </section>
+          <script src="./js/script.js"></script>
+      
+        </main>
+
+        
+        <footer class=" text-black bg-ct-blue ">
+          <div class="mx-auto w-screen p-0 py-2 lg:py-5">
+            <div class="">
+              <div class=" grid grid-rows-0 lg:grid-cols-2 gap-1 sm:gap-6 sm:grid-cols-1">
+                <div class="mb-5 md:mb-0">
+                  <a href="./index.html#" class="flex items-center">
+                    <img
+                      src="./images/logo/logo.png"
+                      class="items-center w-10/12 ml-8 lg:w-96 lg:h-auto lg:ml-32 xl:ml-96"
+                      alt="Robocus Logo"
+                    />
+                  </a>
+
+                </div>
+                <div>
+                <div class="w-full shrink-0 grow-0 basis-auto lg:w-10/12">
+                  <div class="flex flex-wrap ml-6 lg:ml-14">
+                    <div
+                      class="mt-4 mb-4 w-full lg:w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6"
+                    >
+                      <div class="flex items-start">
+                        <div class="shrink-0">
+                          <div class="">
+                            <img src="./images/footer-icons/icon-address-white-01-01.png" alt="" class="w-5 h-5">
+                          </div>
+                        </div>
+                        <div class="ml-6 grow">
+                          <p class="mb-2 text-ct-orange font-bold">Địa chỉ</p>
+                         
+                          <p class="text-white text-sm lg:text-base">
+                            227 Nguyễn Văn Cừ, P.4, Q.5, TP.HCM
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="mb-4 w-full lg:w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6"
+                    >
+                      <div class="flex items-start">
+                        <div class="shrink-0">
+                          <div class="">
+                            <img src="./images/footer-icons/icon-phone-white-01.png" alt="" class="w-5 h-5">
+                          </div>
+                        </div>
+                        <div class="ml-6 grow">
+                          <p class="mb-2 font-bold text-ct-orange">
+                            Hotline / Zalo
+                          </p>
+                          <p class="text-neutral-500"></p>
+                         
+                          <p class="text-white text-sm lg:text-base">0366.399.748</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="mb-4 w-full lg:w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6"
+                    >
+                      <div class="flex items-start">
+                        <div class="shrink-0">
+                          <div class="">
+                            <img src="./images/footer-icons/icon-email-white-01.png" alt="" class="w-5 h-5">
+                          </div>
+                        </div>
+                        <div class="ml-6 grow">
+                          <p class="mb-2 text-ct-orange font-bold">Email</p>
+                         
+                          <p class="text-white text-sm lg:text-base">
+                            robotics@hcmus.edu.vn
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="mb-4 w-full lg:w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6"
+                    >
+                      <div class="align-start flex">
+                        <div class="">
+                          <img src="./images/footer-icons/icon-fb-white-01.png" alt="" class="w-5 h-5">
+                        </div>
+                        <div class="ml-5 grow">
+                          <p class="mb-1 font-bold text-ct-orange">Fanpage</p>
+
+                          <p class="text-white">
+                            <a
+                              href="https://www.facebook.com/RoboticsHCMUS"
+                              class="text-white text-sm lg:text-base hover:font-bold mb-1"
+                              target="_blank"
+                            >
+                            fb.com/RoboticsHCMUS
+                            
+                          </p>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                </div>
+                
+              </div>
+            
+            <!-- Section: Design Block -->
+          </div>
+          <!-- Container for demo purpose -->
+        </div>
+
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- end footer -->
+      </div>
+      <!--end content wrapper-->
+    </div>
+    <!--end root-->
+  </body>
+</html>

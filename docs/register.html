@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robocus 2024</title>
+    <link rel="icon" href="./images/favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/output.css" />
+    <script src="./js/main.js" type="text/javascript" async></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bao gồm thư viện Slick Carousel -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <!-- dots slider -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Tùy chỉnh các thuộc tính CSS nếu cần */
+      .dots {
+        width: 4px; /* Độ rộng của thanh ngang */
+        height: 4px; /* Độ cao của thanh ngang */
+        background-color: chocolate; /* Màu sắc của thanh ngang */
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div
+        class="content-wrapper font-Montserrat bg-white max-w-screen-3xl text-lg mx-auto"
+      >
+
+  <!-- Header -->
+  <header
+  id="header"
+  class="top-0 z-50 sticky py-2 lg:py-3 xl:py-4 w-full h-full bg-ct-blue"
+>
+  <nav class="flex flex-row justify-between items-center relative">
+    <!-- Reponsive Navbar -->
+    <button id="id-top-menu-toggle" class="lg:hidden air:basis-3/6 basis-1/6 lg:basis-1/6 flex items-center text-white px-4 focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+      </svg>
+    </button>
+    <!-- End responsive Navbar -->
+    <!-- LOGO -->
+    <div
+      class="logo air:basis-4/6 air:ml-96 ml-16  lg:ml-4 sm:items-center justify-center pl-0.5 lg:pl-3 xl:pl-10 basis-4/6 lg:basis-2/6 xl:basis-1/6 cursor-pointer"
+    >
+    <a href="../index.html">
+      <img
+        src="../images/logo/logo.png"2
+        alt=""
+        class="px-4 w-auto h-auto sm:items-center"
+      />
+    </a>
+    </div>
+    <ul
+      id="id-top-menu"
+      class="lg:basis-4/6 mt-2 hidden lg:flex lg:items-center lg:justify-center lg:gap-5 xl:gap-10 uppercase lg:text-xs xl:text-lg text-white font-medium"
+    >
+      <li class="top-menu-item">
+        <a href="./index.html#" class="">Trang chủ</a>
+      </li>
+      <li class="top-menu-item">
+        <a href="./index.html#topic" class="">Thể lệ</a>
+      </li>
+      <li id="id-timeline" class="top-menu-item">
+        <a href="./index.html#timeline" class="">Timeline</a>
+      </li>
+      <li id="id-sponsers"  class="top-menu-item" >
+        <a href="./index.html#sponsers" class="">Nhà Tài trợ  </a>
+      </li>
+      <li class="top-menu-item">
+        <a href="./news-page/news.html" class="">Tin tức</a>
+      </li>
+      <li   class="top-menu-item">
+        <a href="./index.html#robocus2023" class="">Robocus 2023</a>
+      </li>
+      <!-- <li class="top-menu-item">
+        <a href="./index.html#contact" class="">Liên hệ</a>
+      </li> -->
+
+    </ul>
+    <ul
+      class="air:basis-3/6 basis-3/6 lg:basis-1/6 flex justify-end items-center mr-14 air:ml-40 lg:ml-5 text-white text-xs air:text-base xl:text-lg lg:text-sm font-semibold"
+    >
+      <li class="cursor-pointer hover:text-orange-700 uppercase">
+        <a
+          href="./register.html"
+          alt="register"
+          class="h-auto air:px-2 air:py-1.5  hover:orangered text-white hover:bg-ct-orange rounded shadow hover:shadow-lg py-0.5 lg:px-3 lg:py-1.5 border border-white hover:border-transparent"
+        >
+          <span>Đăng ký</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+
+        <main class="flex justify-center items-center">
+            <div class=""> <div class="bg-gray-100 dark:bg-gray-800">
+                <div class="min-h-screen w-screen flex items-center justify-center">
+                    <div class="max-w-2xl w-full px-4">
+                        <h1 class="text-4xl font-bold text-center mb-8 text-gray-900 dark:text-white">ĐANG CẬP NHẬT</h1>
+                        <p class="text-lg text-gray-600 dark:text-gray-300 text-center mb-12">Thời hạn đăng ký sẽ sớm được công bố. Vui lòng đợi
+                        </p>
+                        <form class="flex flex-col md:flex-row justify-center items-center gap-4">
+                            <input class="w-full md:w-80  py-2 px-4 border text-gray-800 dark:text-white border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700" type="email" placeholder="Email">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 border dark:bg-ct-blue">Thông báo cho tôi</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </main>
+        <footer class=" text-black bg-ct-blue ">
+          <div class="mx-auto w-screen p-0 py-2 lg:py-8">
+            <div class="">
+              <div class=" grid grid-rows-0 lg:grid-cols-2 gap-1 sm:gap-6 sm:grid-cols-1">
+                <div class="mb-5 md:mb-0">
+                  <a href="./index.html#" class="flex items-center">
+                    <img
+                      src="./images/logo/logo.png"
+                      class="items-center w-10/12 ml-8 lg:w-96 lg:h-auto lg:ml-32 xl:ml-96"
+                      alt="Robocus Logo"
+                    />
+                  </a>
+
+                </div>
+                <div>
+                <div class="w-full shrink-0 grow-0 basis-auto lg:w-10/12">
+                  <div class="flex flex-wrap ml-6 lg:ml-14">
+                    <div
+                      class="mt-4 mb-4 w-full lg:w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6"
+                    >
+                      <div class="flex items-start">
+                        <div class="shrink-0">
+                          <div class="">
+                            <img src="./images/footer-icons/icon-address-white-01-01.png" alt="" class="w-5 h-5">
+                          </div>
+                        </div>
+                        <div class="ml-6 grow">
+                          <p class="mb-2 text-ct-orange font-bold">Địa chỉ</p>
+                         
+                          <p class="text-white text-sm lg:text-base">
+                            227 Nguyễn Văn Cừ, P.4, Q.5, TP.HCM
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="mb-4 w-full lg:w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6"
+                    >
+                      <div class="flex items-start">
+                        <div class="shrink-0">
+                          <div class="">
+                            <img src="./images/footer-icons/icon-phone-white-01.png" alt="" class="w-5 h-5">
+                          </div>
+                        </div>
+                        <div class="ml-6 grow">
+                          <p class="mb-2 font-bold text-ct-orange">
+                            Hotline / Zalo
+                          </p>
+                          <p class="text-neutral-500"></p>
+                         
+                          <p class="text-white text-sm lg:text-base">0366.399.748</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="mb-4 w-full lg:w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6"
+                    >
+                      <div class="flex items-start">
+                        <div class="shrink-0">
+                          <div class="">
+                            <img src="./images/footer-icons/icon-email-white-01.png" alt="" class="w-5 h-5">
+                          </div>
+                        </div>
+                        <div class="ml-6 grow">
+                          <p class="mb-2 text-ct-orange font-bold">Email</p>
+                         
+                          <p class="text-white text-sm lg:text-base">
+                            robotics@hcmus.edu.vn
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="mb-4 w-full lg:w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6"
+                    >
+                      <div class="align-start flex">
+                        <div class="">
+                          <img src="./images/footer-icons/icon-fb-white-01.png" alt="" class="w-5 h-5">
+                        </div>
+                        <div class="ml-5 grow">
+                          <p class="mb-1 font-bold text-ct-orange">Fanpage</p>
+
+                          <p class="text-white">
+                            <a
+                              href="https://www.facebook.com/RoboticsHCMUS"
+                              class="text-white text-sm lg:text-base hover:font-bold mb-1"
+                              target="_blank"
+                            >
+                            fb.com/RoboticsHCMUS
+                            
+                          </p>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                </div>
+                
+              </div>
+            
+            <!-- Section: Design Block -->
+          </div>
+          <!-- Container for demo purpose -->
+        </div>
+
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- end footer -->
+      </div>
+      <!--end content wrapper-->
+    </div>
+    <!--end root-->
+  </body>
+</html>

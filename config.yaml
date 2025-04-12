@@ -1,0 +1,25 @@
+name: RobocusServer
+description: "RobocusServer in an add-on!"
+version: "1.0.7"
+slug: folder
+arch:
+  # - aarch64
+  - amd64
+  # - armhf
+  # - armv7
+  # - i386
+startup: application
+
+ports:
+  80/tcp: 8181
+# image: itzg/minecraft-server
+options:
+  ACCESS_TOKEN: null
+  REPO_URL: null
+
+map:
+  - share:rw
+
+schema:
+  ACCESS_TOKEN: str
+  REPO_URL: str
